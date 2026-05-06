@@ -42,22 +42,22 @@ Repositório (Repository Pattern): É uma camada estrutural do projeto dedicada 
 Status Code (Códigos de Status HTTP): Números incluídos na resposta do servidor para sinalizar o resultado da requisição. A família 200 (como 200 OK ou 201 Created) indica sucesso, os códigos 400 (como 404 Not Found ou 401 Unauthorized) indicam que o cliente cometeu algum erro, e a família 500 aponta que ocorreu um erro interno no servidor.
 
 ## Conjunto de prompts reutilizáveis que possam apoiar futuras revisões sobre o tema
-Categoria 1: Fundamentos de APIs e FastAPI
+### Categoria 1: Fundamentos de APIs e FastAPI
 Prompt de Revisão Teórica: "Explique com suas palavras a diferença entre Path Parameters (Parâmetros de Rota), Query Parameters e Request Body em uma requisição HTTP, dando um exemplo prático de uso para cada um no FastAPI."
 Prompt de Validação: "O que são Schemas criados com o Pydantic? Qual é o papel deles no FastAPI e como eles ajudam a validar os dados que entram e saem da nossa API?"
 Prompt de Execução: "Qual é o comando para iniciar um servidor FastAPI utilizando o Uvicorn? Explique a utilidade da flag --reload durante o ambiente de desenvolvimento."
-Categoria 2: Arquitetura e Banco de Dados (SQLAlchemy)
+### Categoria 2: Arquitetura e Banco de Dados (SQLAlchemy)
 Prompt Comparativo: "Em um projeto estruturado, qual é a diferença entre os 'Schemas' (dados de entrada e saída da API) e os 'Models' (modelos de banco de dados do SQLAlchemy)? Por que separamos esses dois conceitos?"
 Prompt de Padrão de Projeto: "Como funciona o padrão de projeto Repository (Repositório)? Explique por que é uma boa prática isolar a lógica de acesso e manipulação do banco de dados das rotas principais da API."
 Prompt de Relacionamento: "Como configuro uma chave estrangeira (Foreign Key) e um relacionamento bidirecional entre duas tabelas (ex: Usuário e Pedido) usando o SQLAlchemy?"
-Categoria 3: Migrações de Banco de Dados (Alembic)
+### Categoria 3: Migrações de Banco de Dados (Alembic)
 Prompt de Fluxo de Trabalho: "Explique o que é o Alembic e por que precisamos dele para evoluir o banco de dados. Como é o fluxo para gerar uma nova migração (revisão) e aplicá-la ao banco de dados?"
 Prompt de Resolução de Problemas: "O que eu devo fazer caso uma migração do Alembic dê erro no meio do caminho ou eu precise adicionar uma nova coluna em uma tabela que já possui dados gravados?"
-Categoria 4: Segurança e Autenticação (JWT e Hashes)
+### Categoria 4: Segurança e Autenticação (JWT e Hashes)
 Prompt de Segurança: "Por que é extremamente inseguro salvar senhas em texto puro no banco de dados? Explique como utilizamos bibliotecas como o Bcrypt para gerar hashes das senhas antes de salvá-las."
 Prompt de Fluxo de Autenticação: "Descreva passo a passo o fluxo de autenticação de uma API usando JWT (JSON Web Tokens). Como o token é gerado no momento do login e como exigimos ele nas rotas protegidas usando Depends()?"
 Prompt de Controle de Acesso: "O que é CORS (Cross-Origin Resource Sharing) e como utilizamos os Middlewares no FastAPI para autorizar ou bloquear que sites front-end específicos consumam nossa API?"
-Categoria 5: Desafios Práticos de Código
+### Categoria 5: Desafios Práticos de Código
 Desafio de Rota HTTP: "Escreva o código em Python de uma rota POST no FastAPI para criar um produto. A rota deve receber os dados validados por um schema, salvar no banco de dados usando um repositório, e retornar o Status Code 201 (Created)."
 Desafio de Operações Assíncronas: "Crie um exemplo prático de como utilizar o recurso de Background Tasks (Tarefas em Segundo Plano) do FastAPI para simular o envio de um e-mail sem travar o tempo de resposta da requisição principal."
-💡 Dica de estudo: Quando for utilizar esses prompts, você pode adicionar no final a instrução: "Faça perguntas ao final da sua explicação para testar se eu realmente entendi o conceito." Isso transformará a revisão em uma sessão de estudo interativa!
+### 💡 Dica de estudo: Quando for utilizar esses prompts, você pode adicionar no final a instrução: "Faça perguntas ao final da sua explicação para testar se eu realmente entendi o conceito." Isso transformará a revisão em uma sessão de estudo interativa!
