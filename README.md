@@ -2,7 +2,7 @@
 
 ## Repositório para entrega de desafio do Bootcamp da Luizalabs.  Acelere sua Aprendizagem com IA: Explore o Poder do NotebookLM
 ### Contexto e Objetivos:
-Uma inteligência artificial especialista em Back-Python e APIs FastAPI para auxiliar no aprendizado sobre o tema.
+Uma inteligência artificial especialista em Back-End Python e APIs FastAPI para auxiliar no aprendizado sobre o tema.
 
 #### Fontes:
 https://www.python.org/
